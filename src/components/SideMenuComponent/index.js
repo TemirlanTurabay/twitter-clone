@@ -49,7 +49,7 @@ function SideMenu(){
     return(
         <div className="w-25 mt-3 mx-5">
             <img className='logo-icon mb-2' src={require('./images/png-transparent-bird-tweet-twitter-twitter-logo-social-media-icon.png')}></img>
-            {menu.map((item, index) => <MenuItem icon={item.icon} name={item.name}/>)}
+            {menu.map((item, index) => <MenuItem icon={item.icon} name={item.name} key={index}/>)}
         </div>
     );
 }
